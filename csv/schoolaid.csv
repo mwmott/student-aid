@@ -1,0 +1,94 @@
+OPEID,School,City,SchoolType,DRATE1,subudis,unsubudis,grantstotal,loanstotal,loansgrantstotal
+3490400,Emil Fries Piano Hospital & Training Center,Vancouver,Private,,9000,1650,20050,10650,30700
+4155000,Northwest School of Wooden Boat Building,Port Hadlock,Private,,63034,79998,52117,143032,195149
+380300,Whitman College,Walla Walla,Private,2.6,2025648,788004,654007,2813652,3467659
+2106700,Trinity Lutheran College,Everett,Private,2.7,508885,456865,342083,965750,1307833
+2242500,Bastyr University,Kenmore,Private,2.9,1024876,1142670,428086,2167546,2595632
+379700,University of Puget Sound,Tacoma,Private,2.9,5301908,3870025,2165881,9171933,11337814
+379000,Seattle University,Seattle,Private,3.2,10103235,8824539,4094895,18927774,23022669
+378800,Seattle Pacific University,Seattle,Private,3.4,8761123,7169708,4313635,15930831,20244466
+377800,Gonzaga University,Spokane,Private,3.8,8593817,8732019,3786559,17325836,21112395
+378500,Pacific Lutheran University,Tacoma,Private,4.3,7759908,6618021,3794533,14377929,18172462
+379900,Walla Walla University,College Place,Private,4.6,3835601,4036973,2272317,7872574,10144891
+380400,Whitworth University,Spokane,Private,5,6588590,5955422,2928904,12544012,15472916
+378300,Northwest University,Kirkland,Private,6.4,3488437,3678726,2126925,7167163,9294088
+1302200,City University of Seattle,Seattle,Private,7.2,1928697,2663836,881047,4592533,5473580
+379400,Saint Martin's University,Lacey,Private,9.5,3486231,3321153,2224634,6807384,9032018
+3689400,Faith Evangelical College & Seminary,Tacoma,Private,10.2,317495,501369,304574,818864,1123438
+1231500,Cornish College of the Arts,Seattle,Private,13.1,2378364,2130442,1236946,4508806,5745752
+938700,Perry Technical Institute,Yakima,Private,13.8,3648889,4015707,2474630,7664596,10139226
+377700,Heritage University,Toppenish,Private,21,2926441,3451828,2996615,6378269,9374884
+3283300,Northwest HVAC/R Association & Training,Spokane,Private,24.1,132320,185834,157439,318154,475593
+4172900,Academy of Cosmetology,Richland,Profit,,56089,69430,59701,125519,185220
+3953300,Yakima Beauty School,Yakima,Profit,,61500,6000,187206,67500,254706
+3065000,Lucas Marc Academy,Richland,Profit,,378091,148880,514148,526971,1041119
+4170100,The Salon Professional Academy,Tacoma,Profit,,571611,699024,466426,1270635,1737061
+3724300,Digipen Institute of Technology,Redmond,Profit,5.3,2110027,2107379,1234377,4217406,5451783
+2105300,Evergreen Beauty And Barber College,Bellevue,Profit,7.6,373632,358242,403373,731874,1135247
+4149400,Gary Manuel Aveda Institute,Seattle,Profit,8.6,986851,1387791,772885,2374642,3147527
+3917300,Evergreen Beauty And Barber College,Everett,Profit,10,473725,423415,513635,897140,1410775
+4120000,Sunnyside Beauty Academy,Sunnyside,Profit,11.1,39050,30206,81841,69256,151097
+3099000,Cortiva Institute - Seattle,Seattle,Profit,11.1,650481,1025702,650202,1676183,2326385
+973900,Glen Dow Academy of Hair Design & Salons,Spokane,Profit,12,442360,588647,535435,1031007,1566442
+2236800,Professional Beauty School,Yakima,Profit,12.8,80750,42924,106791,123674,230465
+4130800,Cascade Beauty College,Auburn,Profit,13.3,55654,47372,125625,103026,228651
+2602100,Northwest College of Art & Design,Poulsbo,Profit,13.5,389253,417090,258528,806343,1064871
+2617500,Everest College,Seattle,Profit,15.5,3932334,6177376,5196948,10109710,15306658
+2331400,Northwest Hair Academy,Mount Vernon,Profit,16.6,322683,355682,471363,678365,1149728
+2300100,Everest College,Bremerton,Profit,17.1,5878090,8811347,8571799,14689437,23261236
+2291300,The Art Institute of Seattle,Seattle,Profit,17.2,4888702,6196562,3267866,11085264,14353130
+2184200,Paroba College of Cosmetology,Everett,Profit,17.7,318949,395604,434747,714553,1149300
+4132800,Inland Massage Institute,Spokane,Profit,17.8,83784,111858,121857,195642,317499
+1148100,Divers Institute of Technology,Seattle,Profit,19.9,706394,954998,764848,1661392,2426240
+2606200,Everest College,Renton,Profit,20.2,3705604,5870930,5531892,9576534,15108426
+1309400,Bellingham Beauty School,Bellingham,Profit,21,42832,49134,140848,91966,232814
+2222900,International Air & Hospitality Academy,Vancouver,Profit,21.2,1306938,1982325,1503397,3289263,4792660
+2541900,Bj's Beauty & Barber College,Tacoma,Profit,21.9,203679,121716,408737,325395,734132
+1249600,Toni & Guy Hairdressing Academy,Shoreline,Profit,23.5,322535,476587,294891,799122,1094013
+2203300,Gene Juarez Beauty Schools,Mountlake Terrace,Profit,24.4,1739408,2140183,2025573,3879591,5905164
+2504900,Beauty Academy,Wenatchee,Profit,25.9,239079,249939,348760,489018,837778
+3071800,ITT Technical Institute,Spokane Valley,Profit,26.8,3817559,5060328,10242374,8877887,19120261
+2326500,Interface College,Spokane,Profit,29.6,263974,410999,437047,674973,1112020
+4127200,Victoria's Academy of Cosmetology,Kennewick,Profit,29.7,289525,258641,407817,548166,955983
+3932500,Total Cosmetology Training Center,Spokane,Profit,31.2,400404,529280,582999,929684,1512683
+2202200,Stylemasters College of Hair Design,Longview,Profit,46.6,385751,437811,511601,823562,1335163
+970600,South Seattle Community College,Seattle,Public,,,,3658302,0,3658302
+970400,North Seattle Community College,Seattle,Public,,,,3805906,0,3805906
+377200,Centralia College,Centralia,Public,,,,4691404,0,4691404
+378700,Seattle Central Community College,Seattle,Public,,143219,16026,9145532,159245,9304777
+379800,University of Washington - Seattle,Seattle,Public,3.9,48049873,33787922,45418874,81837795,127256669
+380200,Western Washington University,Bellingham,Public,4.6,22275758,20298011,14501714,42573769,57075483
+380000,Washington State University,Pullman,Public,5.8,43862860,41603457,31362648,85466317,116828965
+377100,Central Washington University,Ellensburg,Public,7.4,22366711,22723220,16386122,45089931,61476053
+376900,Bellevue College,Bellevue,Public,7.5,3905344,5587561,9308403,9492905,18801308
+377500,Eastern Washington University,Cheney,Public,7.6,23081888,22103399,19387933,45185287,64573220
+3483500,Cascadia Community College,Bothell,Public,7.9,824376,1060524,1858133,1884900,3743033
+815500,The Evergreen State College,Olympia,Public,10.7,9378662,7774845,8699656,17153507,25853163
+377400,Columbia Basin College,Pasco,Public,12.7,2328663,2474525,9042957,4803188,13846145
+500000,Pierce College,Lakewood,Public,13.2,5442531,6085611,12948219,11528142,24476361
+377600,Everett Community College,Everett,Public,15.1,2988870,3342953,7928740,6331823,14260563
+379100,Shoreline Community College,Shoreline,Public,15.3,2978697,3129647,5983232,6108344,12091576
+1036400,Whatcom Community College,Bellingham,Public,15.5,3040512,3009653,6978455,6050165,13028620
+379600,Tacoma Community College,Tacoma,Public,16.4,7056080,9010116,14817974,16066196,30884170
+537300,Lake Washington Institute of Technology,Kirkland,Public,16.5,2994769,3584772,4369376,6579541,10948917
+378100,Highline Community College,Des Moines,Public,17,2178695,1997888,10107500,4176583,14284083
+537200,South Puget Sound Community College,Olympia,Public,17.5,2139055,2067672,6783695,4206727,10990422
+380500,Yakima Valley Community College,Yakima,Public,17.9,4045081,3370635,11210696,7415716,18626412
+1043400,Renton Technical College,Renton,Public,18.1,1263450,1460175,3508726,2723625,6232351
+379200,Skagit Valley College,Mount Vernon,Public,19.1,1708169,2188951,5994372,3897120,9891492
+377300,Clark College,Vancouver,Public,19.5,10045634,12630657,22494397,22676291,45170688
+499900,Bellingham Technical College,Bellingham,Public,19.6,2391700,3305651,4985259,5697351,10682610
+378000,Green River Community College,Auburn,Public,19.7,3703742,4547610,8901839,8251352,17153191
+378400,Olympic College,Bremerton,Public,19.9,4069774,4729516,11022365,8799290,19821655
+500100,Edmonds Community College,Lynnwood,Public,20.3,3691673,3944353,7840063,7636026,15476089
+575200,Clover Park Technical College,Lakewood,Public,20.6,4026044,5776476,7324891,9802520,17127411
+954400,Spokane Falls Community College,Spokane,Public,20.7,6693395,5320287,13073193,12013682,25086875
+377900,Grays Harbor College,Aberdeen,Public,22.1,1176162,984669,4430567,2160831,6591398
+500600,Walla Walla Community College,Walla Walla,Public,23.3,3484923,3715271,7693431,7200194,14893625
+377000,Big Bend Community College,Moses Lake,Public,23.6,1681254,1420025,4572095,3101279,7673374
+379300,Spokane Community College,Spokane,Public,24.7,11415088,10766709,18749921,22181797,40931718
+380100,Wenatchee Valley College,Wenatchee,Public,24.8,3313588,3497478,8787037,6811066,15598103
+530600,Bates Technical College,Tacoma,Public,25.2,1129013,1299890,3582804,2428903,6011707
+378600,Peninsula College,Port Angeles,Public,27.6,2409469,2911354,4246022,5320823,9566845
+378200,Lower Columbia College,Longview,Public,27.7,3277825,4106204,7207026,7384029,14591055
+3466400,The Seattle School of Theology and Psychology,Seattle,Private,5.9,,,,,

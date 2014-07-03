@@ -1,0 +1,9 @@
+{
+  "assetPath": "http://apps.seattletimesdata.com/blogs/2014/student-aid",
+  "s3": {
+    "stage": {
+      "bucket": "apps.seattletimesdata.com",
+      "path": "blogs/2014/student-aid"
+    }
+  }
+}

@@ -1,0 +1,334 @@
+@import "palette";
+
+[ng-cloak] {
+  display: none;
+}
+
+.filters {
+  font-family: arial, sans-serif;
+  padding: 16px 0;
+  font-size: 13px;
+
+  .pill {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  i {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  input[type=radio] {
+    display: none;
+
+    &:checked + label {
+      background: @black;
+      color: @white;
+      border-color: @gray;
+    }
+  }
+
+  label {
+    @curve: 8px;
+
+    display: block;
+    float: left;
+    padding: 4px 8px;
+    outline: 1px solid @gray;
+    background: @white;
+    color: @gray;
+    //border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+
+    
+  }
+
+}
+
+.student-aid {
+
+  width: 630px;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+
+  @cash: #0B486B; // #0B486B;
+  @equity: #79BD9A; // #79BD9A;
+
+  //@other: desaturate(darken(#CFF09E, 20%), 30%); //#7664AC;
+  //@other: #CFF09E;
+  @other: darken(#C9DF8A, 10%);
+  @border: lighten(@gray, 30%);
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .pay {
+    display: block;
+    float: left;
+    height: 1em;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  border-collapse: collapse;
+
+  .cash {
+    background: @cash;
+  }
+
+  .equity {
+    background: @equity;
+  }
+
+  .other {
+    background: @other;
+  }
+
+  tr {
+    background: white;
+
+    &:nth-child(2n) {
+      background: darken(white, 3%);
+    }
+  }
+
+  th {
+    border-bottom: 1px solid @border;
+    font-weight:normal;
+    text-align: left;
+    padding: 4px 8px;
+    background: @white;
+    color: @black;
+    font-size: 16px;
+
+    &[ng-click] {
+      cursor: pointer;
+    }
+
+    &.sort {
+      cursor: pointer;
+    }
+
+    &.sorted {
+      &::after {
+        content: "\25BC";
+      }
+
+      &.up::after {
+        content: "\25B2";
+      }
+    }
+  }
+
+  td {
+    vertical-align: middle;
+    padding: 4px 8px;
+  }
+
+  input.trick {
+    display: none;
+    @hidden-height: 100px;
+
+    &:checked + label {
+      padding-bottom: @hidden-height;
+
+      span.pay {
+        overflow: visible;
+      }
+
+      &.short {
+        padding-bottom: 70px;
+      }
+
+      .when-checked {
+        opacity: 1;
+        height: auto;
+      }
+    }
+  }
+
+  label.trick {
+    display: block;
+    transition: padding .2s linear;
+    position: relative;
+    cursor: pointer;
+
+    span.pay {
+      overflow: hidden;
+    }
+
+    .when-checked {
+      position: absolute;
+      top: 30px;
+      opacity: 0;
+      height: 0;
+      padding: 5px;
+      transition: opacity .2s linear;
+      background: white;
+      border-width: 2px;
+      border-radius: 2px;
+      border-style: solid;
+      z-index: 99999;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, .1);
+
+      .percent {
+        background: #555;
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+
+      @tip: 6px;
+
+      &::before {
+        position: absolute;
+        top: -(@tip * 2);
+        left: 0px;
+        content: "";
+        border-color: transparent transparent @equity @equity;
+        border-width: @tip 4px;
+        border-style: solid;
+        height: 0px;
+        width: 0px;
+      }
+    }
+
+    .cash .when-checked {
+      right: 0;
+      text-align: right;
+      border-color: @cash;
+
+      .percent {
+        background: darken(@cash, 5%);
+      }
+
+      .percent1{
+        background: #364da1;
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+      .percent2{
+        background: #4e7bc4;
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: baseline;
+      }
+
+      &::before {
+        right: 0px;
+        left: auto;
+        border-color: transparent @cash @cash transparent;
+      }
+    }
+
+    .equity {
+      .when-checked {
+        border-color: @equity;
+
+        .percent {
+          background: darken(@equity, 15%);
+        }
+      }
+
+      &.last .when-checked {
+        top: 70px;
+        &::before {
+          top: -54px;
+          border-width: 27px 4px;
+        }
+      }
+    }
+
+    .other .when-checked {
+      border-color: @other;
+
+      .percent {
+        background: darken(@other, 25%);
+      }
+
+      &::before {
+        border-color: transparent transparent @other @other;
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        line-height: 25px;
+
+        b {
+          color: white;
+          padding: 0 4px;
+        }
+      }
+    }
+  }
+
+  .col-name{
+    font-size: 13px;
+  }
+
+  .col-type{
+    font-size: 13px;
+  }
+
+  .col-city{
+     font-size: 13px;
+  }
+
+  .col-aid{
+   font-size: 13px;
+  }
+
+  .col-defaults{
+    font-size: 13px;
+  }
+
+  .col-name2{
+  font-weight:bold;
+  }
+
+  .col-type2{
+  font-style:italic;
+  }
+
+  .col-city2{
+  }
+ 
+  .col-aid2{
+    width: 150px;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  .col-defaults2{
+    color: #CC0000;
+    text-align: right;
+    font-weight:bold;
+
+  }
+  .col-defaultshead {
+    text-align: right;
+    font-size: 13px;
+  }
+
+}

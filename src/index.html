@@ -1,0 +1,87 @@
+<style>
+<%= t.include("build/style.css") %>
+</style>
+<div id="student-aid" ng-controller="studentController" ng-cloak>
+  <div align="middle">
+    <div align="middle" style="padding-top:20px;">
+      <span style="font-family: arial, sans-serif; font-size:14px;">Search: <input ng-model="searchText"> </span>
+      <span class="filters">
+        <span style="font-family: arial, sans-serif; font-size:14px; padding-left: 20px">Filters:</span>
+        <div class="pill">
+          <input type="radio" id="*" ng-model="filterExp" value="*">
+          <label for="*">All</label>
+          <input type="radio" id="public" ng-model="filterExp" value="SchoolType==Public">
+          <label for="public">Public</label>
+          <input type="radio" id="private" ng-model="filterExp" value="SchoolType==Private">
+          <label for="private">Private</label>
+          <input type="radio" id="forprofit" ng-model="filterExp" value="SchoolType==Profit">
+          <label for="forprofit">For-profit</label>
+        </div>
+      </span>
+      <div align="middle" style="padding-top: 20px">
+        <table id="searchTextResults" class="student-aid">
+          <thead>
+            <tr>
+              <th class="col-name" ng-click="sort('School')" sort-arrow="School"> COLLEGE
+              <th class="col-city" ng-click="sort('City')" sort-arrow="City"> CITY
+              <th class="col-type" ng-click="sort('SchoolType')" sort-arrow="SchoolType"> TYPE
+              <th class="col-aid">2012-2013 <span style="color: #0B486B;">LOANS</span> v. <span style="color: #79BD9A;">GRANTS</span>
+              <th class="col-defaultshead" ng-click="sort('DRATE1')" sort-arrow="DRATE1"> 2010 3-YEAR LOAN DEFAULT RATE
+          <tbody>
+            <tr ng-repeat="line in list | cull:filterExp | filter: searchText">
+              <td class="col-name2"> {{ line.School | na }}
+              <td class="col-city2"> {{ line.City | na }} 
+              <td class="col-type2"> {{ line.SchoolType | na }}
+              <td class="col-aid2">
+
+              <input class="trick" type="radio" id="{{ line.School }}" name="pay-check">
+              <label class="trick" for="{{ line.School }}">
+
+                <span ng-show="line.loanstotal" class="cash pay" ng-style="{width: '{{ line.loanstotal / line.loansgrantstotal * 100 }}%'}">
+                  <div class="when-checked">
+                    <div>
+                      Loans:
+                        <b>{{ line.loanstotal | formatMoney }}</b>
+                        <span class="percent">{{ line.loanstotal / line.loansgrantstotal | formatPercent | na }}</span>
+                    </div>
+                    <hr>
+                    <div style="padding-bottom: 5px">
+                      Subsidized: 
+                        <b>{{ line.subudis | formatMoney }}</b>
+                        <span class="percent2">{{ line.subudis / line.loanstotal | formatPercent | na }}</span> 
+                    </div>
+                    <div> 
+                      Unsubsidized: 
+                        <b>{{ line.unsubudis | formatMoney }}</b>
+                        <span class="percent1">{{ line.unsubudis / line.loanstotal | formatPercent | na }}</span>
+                    </div>
+                  </div>
+                </span>
+                <span ng-show="line.grantstotal" class="equity pay" ng-style="{width: '{{ line.grantstotal / line.loansgrantstotal * 100 }}%' }">
+                  <div class="when-checked">
+                    Grants:
+                      <b>{{ line.grantstotal | formatMoney }}</b>
+                      <span class="percent">{{ line.grantstotal / line.loansgrantstotal | formatPercent | na }}</span>
+                  </div>
+                </span>
+              </label>
+
+              <td class="col-defaults2">  {{ line.DRATE1 | na | formatPercent2 | formatPercent3 }}
+          
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </table>
+</div>
+
+<script>
+//load Data from the CSV file
+var studentAid = <%= JSON.stringify(csv.schoolaid) %>;
+</script>
+<script>
+<%= t.include("build/app.js") %>
+</script>

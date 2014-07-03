@@ -1,0 +1,30 @@
+{
+  "name": "pym.js",
+  "version": "0.1.1",
+  "homepage": "http://blog.apps.npr.org/pym.js/",
+  "authors": [
+    "NPR"
+  ],
+  "description": "Resize an iframe responsively depending on the height of its content and the width of its container.",
+  "main": "src/pym.js",
+  "keywords": [
+    "iframe",
+    "responsive",
+    "browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "examples"
+  ],
+  "_release": "0.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.1",
+    "commit": "afed801a3b1732349c17343764b610ba6388e6a3"
+  },
+  "_source": "git://github.com/nprapps/pym.js.git",
+  "_target": "~0.1.1",
+  "_originalSource": "pym.js",
+  "_direct": true
+}
